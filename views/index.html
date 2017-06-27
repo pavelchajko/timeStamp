@@ -1,0 +1,82 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" href="/style.css"> -->
+  </head>
+  <body>
+    <header>
+      <h1>
+        API: Timestamp microservice
+      </h1>
+    </header>
+    <h2>
+      User Stories:
+    </h2>
+    <ol>
+      1)I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+    </ol>
+    <ol>
+      2) If it does, it returns both the Unix timestamp and the natural language form of that date.
+    </ol>
+    <ol>
+      3)If it does not contain a date or Unix timestamp, it returns null for those properties.
+    </ol>
+   
+    <h2>
+      Example Usage
+    </h2>
+      <p style="color:red;">
+        <font size="3.5">
+        https://winter-punch.glitch.me/December%2015,%202015
+        </font>
+      </p>
+    <p style="color:red;">
+        <font size="3.5">
+        https://winter-punch.glitch.me/1450137600
+        </font>
+      </p>
+    
+    <h2>
+      Example Output
+    </h2>
+      <p style="color:red;">
+        <font size="3.5">
+        {"unix":-55794182400,"natural":"December 15, 201"}
+        </font>
+      </p>
+    
+    
+    
+    <footer style="position:absolute; bottom:0; text-align:center; left:45%; height:40px;">
+      <p>
+        Coded by
+      
+      <a href="https://www.linkedin.com/in/pavel-gichevski-8223ab5b/">
+         Pavel Gichevski
+      </a>
+        </p>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
